@@ -47,7 +47,7 @@ Ext.define('Packt.Application', {
                 listeners : {
                     afteranimate : function(el, startTime, eOpts )
                     {
-                        console.log('launch!');
+                       //After the splash screen disappears, show the login window
                         Ext.widget('login-dialog');
                     }
                 }

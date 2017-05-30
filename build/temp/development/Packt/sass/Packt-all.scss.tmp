@@ -901,9 +901,12 @@ $include-packt-util-util: true;
 $include-packt-view-login-capslocktooltip: true;
 $include-packt-view-login-login: true;
 $include-packt-view-login-logincontroller: true;
+$include-packt-view-main-footer: true;
+$include-packt-view-main-header: true;
 $include-packt-view-main-main: true;
 $include-packt-view-main-maincontroller: true;
 $include-packt-view-main-mainmodel: true;
+$include-packt-view-main-panel: true;
 /* including package ext-theme-base */
 @import '../../../../../ext/packages/ext-theme-base/sass/etc/all';
 /* including package ext-theme-neutral */
@@ -1157,3 +1160,7 @@ $relative-image-path-for-uis: $ext-theme-neptune-resource-path;
 @import '../../../../../ext/packages/ext-theme-neptune/sass/src/form/field/File';
 @import '../../../../../ext/packages/ext-theme-neptune/sass/src/form/field/HtmlEditor';
 @import '../../../../../ext/packages/ext-theme-neptune/sass/src/resizer/Resizer';
+/* including package Packt */
+$Packt-resource-path: 'images' !default;
+$relative-image-path-for-uis: $Packt-resource-path;
+@import '../../../../../sass/src/view/main/Footer';
