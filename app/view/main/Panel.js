@@ -5,7 +5,7 @@ Ext.define('Packt.view.main.Panel', {
     items : [
         {
             xtype : 'panel',
-            closable : false, //This tab cannot be closed
+            closable : false, //This tab cannot be closed.
             iconCls : 'fa fa-home fa-lg tabIcon',
             title : 'Home'
         }
