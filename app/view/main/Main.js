@@ -9,6 +9,9 @@ Ext.define('Packt.view.main.Main', {
     extend: 'Ext.container.Container',
     // extend: 'Ext.container.Viewport', //Make this container a viewport 
     requires: [
+        'Packt.view.main.Header',
+        'Packt.view.main.Footer',
+        'Packt.view.main.Panel',
         'Packt.view.main.MainController',
         'Packt.view.main.MainModel'
     ],

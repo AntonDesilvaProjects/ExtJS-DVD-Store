@@ -3125,12 +3125,20 @@
   overflow: visible;
   clip: auto; }
 
-/* line 3, C:/xampp/htdocs/masteringextjs/build/temp/development/Packt/sass/../../../../../sass/etc/all.scss */
+/* line 4, C:/xampp/htdocs/masteringextjs/build/temp/development/Packt/sass/../../../../../sass/etc/iconColors.scss */
+.tabIcon {
+  color: #0b67c4; }
+
+/* line 8, C:/xampp/htdocs/masteringextjs/build/temp/development/Packt/sass/../../../../../sass/etc/iconColors.scss */
+.buttonIcon {
+  color: white; }
+
+/* line 4, C:/xampp/htdocs/masteringextjs/build/temp/development/Packt/sass/../../../../../sass/etc/all.scss */
 .x-mask.splashscreen {
   background-color: white;
   opacity: 1; }
 
-/* line 9, C:/xampp/htdocs/masteringextjs/build/temp/development/Packt/sass/../../../../../sass/etc/all.scss */
+/* line 10, C:/xampp/htdocs/masteringextjs/build/temp/development/Packt/sass/../../../../../sass/etc/all.scss */
 .x-mask-msg.splashscreen,
 .x-mask-msg.splashscreen div {
   font-size: 16px;
@@ -3140,11 +3148,11 @@
   background-color: transparent;
   background-position: top center; }
 
-/* line 20, C:/xampp/htdocs/masteringextjs/build/temp/development/Packt/sass/../../../../../sass/etc/all.scss */
+/* line 21, C:/xampp/htdocs/masteringextjs/build/temp/development/Packt/sass/../../../../../sass/etc/all.scss */
 .x-message-box .x-window-body .x-box-inner {
   min-height: 110px !important; }
 
-/* line 24, C:/xampp/htdocs/masteringextjs/build/temp/development/Packt/sass/../../../../../sass/etc/all.scss */
+/* line 25, C:/xampp/htdocs/masteringextjs/build/temp/development/Packt/sass/../../../../../sass/etc/all.scss */
 .x-splash-icon {
   background-image: url("images/app/flash-logo.png") !important;
   margin-top: -30px;
@@ -25596,22 +25604,3 @@ div.x-border-layout-ct {
 /* line 143, C:/xampp/htdocs/masteringextjs/build/temp/development/Packt/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/app/bindinspector/Inspector.scss */
 .x-bindinspector-filter-visible .x-vm-icon {
   color: #7BC8F3; }
-
-/* data missing from binding */
-/* line 148, C:/xampp/htdocs/masteringextjs/build/temp/development/Packt/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/app/bindinspector/Inspector.scss */
-.x-bindinspector-missing-data .x-tree-icon {
-  /*red*/
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABgUlEQVR42mNgwAGueUd43w6IunsrIOrBdd+wYAZSwBnPAGWgxm93A2P+g/At/6gfl70DNYk24LZ/5BKQRhB9wy9yFoh90zdyNVGar3iGat0OiP4LsvWMS6jcOVc/KZBr7vhH/bvsE6hPhO1Rq8C2+0VNgYnd8o/ohXplA17NIBtANoFsBNnMy8v7H4RPOPuJ3/KL+gqSu+YTboTTgJt+kRshNkX0gvgwA8Cu8IvsBMv5RW7B7nffcFOw7f7RXy66uYmhG3DO01P0VkDkZ5AhV7xDzTAMAJq8HRza/pHtMDFkA0Dghl9EK0RNxA5Uv3tHWIEl/KI+HrN0F8JlAEgOpAakFqQH4Xf/qH1Q2xsJxdItv4gmaFjsBQtc94lwgEbRuzMuLvzIitFdAALnHQIEbvtHv4cYEmYHtD1yE8T28Gp027AZAHZFQFQtxMuRG4GJJOophp8IAFiYAdPGM5ABGyCZJppEDA6zTQxnHHxEgAGzHJiE3xJnECiTRb0F6QGlDQCUUiJb7CpB8QAAAABJRU5ErkJggg==); }
-
-/* rowbody */
-/* line 154, C:/xampp/htdocs/masteringextjs/build/temp/development/Packt/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/app/bindinspector/Inspector.scss */
-.x-cmp-list-row-body {
-  display: none;
-  background: #4E4E4E;
-  padding: 7px 12px;
-  color: #FFC256;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 13px;
-  line-height: 21px;
-  border: 1px solid #222222; }

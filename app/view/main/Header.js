@@ -21,6 +21,22 @@ Ext.define('Packt.view.main.Header', {
         },
         {
             xtype : 'tbfill'
+        },
+        {
+            xtype : 'translation'
+        },
+        {
+            xtype : 'tbseparator' //This is the "|" sepearator icon
+        },
+        {
+            xtype : 'button',
+            itemId : 'logout',
+            text : 'Logout',
+            reference : 'logout',
+            iconCls : 'fa fa-sign-out fa-lg buttonIcon',
+            listeners : {
+                click : 'onLogout'
+            }
         }
     ]
 });
