@@ -19,6 +19,8 @@ Ext.define('Packt.view.main.Main', {
     xtype: 'app-main',
     controller: 'main',
 
+    //Connect the 'main' viewModel to this main page. This way we can access all its
+    //defined fields
     viewModel: {
         type: 'main'
     },

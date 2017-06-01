@@ -1,7 +1,8 @@
 Ext.define('Packt.view.login.LoginController', {
     extend : 'Ext.app.ViewController',
     requires : [
-        'Packt.view.login.CapsLockTooltip'
+        'Packt.view.login.CapsLockTooltip',
+        'Packt.util.SessionMonitor'
     ],
     alias : 'controller.login',
 
@@ -78,6 +79,7 @@ Ext.define('Packt.view.login.LoginController', {
         this.getView().unmask();
         this.getView().close();
         Ext.create('Packt.view.main.Main');
+        Packt.util.SessionMonitor.start();
     },
     onTextFieldSpecialKey : function( textField , e, options )
     {
