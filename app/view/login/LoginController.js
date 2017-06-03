@@ -28,7 +28,7 @@ Ext.define('Packt.view.login.LoginController', {
         var me = this;
         var form = me.lookupReference('form');
         //Mask the form while authentication is taking place
-        form.mask('Authenticating...Please wait.');
+        form.mask( translations.authMask );
 
         form.submit({
             clientValidation : true,

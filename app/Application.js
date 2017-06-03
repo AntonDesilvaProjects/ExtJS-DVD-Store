@@ -1,3 +1,23 @@
+//Following code needs to be run before the ExtJS application is loaded
+function loadLocale() {
+    /*
+        If local storage is avaiable get the item 'user-lang' which will specify
+        the language of the user. If that value is not available or local storage is
+        is not defined, set English as default value.
+    */
+    var lang = localStorage ? ( localStorage.getItem('user-lang') || 'en') : 'en';
+    //Load the appropriate language dictionary
+    var file = Ext.util.Format.format("resources/locale/{0}.js", lang);
+    Ext.Loader.loadScript( {
+        url : file,
+        onError : function() {
+            alert('Error loading locale file. Please contact system adminstrator');
+        }
+    });
+}
+
+loadLocale();
+
 /**
  * The main application class. An instance of this class is created by app.js when it calls
  * Ext.application(). This is the ideal place to handle application launch and initialization
@@ -19,7 +39,7 @@ Ext.define('Packt.Application', {
     {
         var me = this;
         me.splashscreen = Ext.getBody().mask(
-            'Loading application', 'splashscreen'
+            translations.loadApplication , 'splashscreen'
         );
         me.splashscreen.addCls('splashscreen');
         //DomHelper can manupilate the DOM directly 

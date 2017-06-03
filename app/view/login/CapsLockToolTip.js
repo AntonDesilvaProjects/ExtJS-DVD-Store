@@ -7,6 +7,6 @@ Ext.define('Packt.view.login.CapsLockTooltip', {
     width : 200,
     dismissDelay : 0, //After how long should the tooltip disappear ? 0 means it shouldn't disappear
     autoHide : false, //Autohide the tooltip when the mouse moves away from the target ?
-    title : '<div class="fa fa-exclamation-triangle"> Caps Lock is ON</div>',
+    title : '<div class="fa fa-exclamation-triangle">' +  translations.capsLockTitle + '</div>',
     html : '' //We can attach a body to the tip if needed.
 });

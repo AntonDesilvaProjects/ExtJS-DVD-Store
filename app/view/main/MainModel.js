@@ -8,7 +8,7 @@ Ext.define('Packt.view.main.MainModel', {
 
     data: {
         name: 'Packt',
-        appName : 'DVD Rental Store',
+        appName : translations.applicationTitle,
         appHeaderIcon : '<span class="fa fa-desktop fa-lg app-header-logo">',
         footer : '©2017 All Rights Reserved.'
     }

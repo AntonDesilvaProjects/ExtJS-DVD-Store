@@ -1,7 +1,8 @@
 Ext.define('Packt.view.login.Login', {
     requires : [
         'Packt.view.login.LoginController',
-        'Packt.util.Util'
+        'Packt.util.Util',
+        'Packt.view.locale.Translation'
     ],
     extend : 'Ext.window.Window',
     //must be unique
@@ -15,7 +16,7 @@ Ext.define('Packt.view.login.Login', {
                       */
     },
     iconCls : 'fa fa-key fa-lg',
-    title : 'Login',
+    title : translations.login,
     closeAction : 'hide', //Alternatives: close - remove from DOM and destroy all children 
                                         //destroy - remove object and garbage collect
     closable : false, 
@@ -50,14 +51,14 @@ Ext.define('Packt.view.login.Login', {
             items : [
                 {
                     name : 'user',
-                    fieldLabel : 'User',
+                    fieldLabel : translations.user,
                     maxLength : 25
                 },
                 {
                     id : 'password', //Using id is BAD!! but we need it here to display the tooltip
                     inputType : 'password',
                     name : 'password',
-                    fieldLabel : 'Password',
+                    fieldLabel : translations.password,
                     maxLength : 15,
                     vtype : 'customPass', //Override the default VType from above with our custom Vtype,
                     msgTarget : 'side',
@@ -73,12 +74,15 @@ Ext.define('Packt.view.login.Login', {
                     dock : 'bottom',
                     items : [
                         {
+                            xtype : 'translation'
+                        },
+                        {
                             xtype : 'tbfill' //This is just empty spacing move the next two button down
                         },
                         {
                             xtype : 'button',
                             iconCls : 'fa fa-times fa-lg',
-                            text : 'Cancel',
+                            text : translations.cancel,
                             listeners : {
                                 click : 'onButtonClickCancel'
                             }
@@ -87,7 +91,7 @@ Ext.define('Packt.view.login.Login', {
                             xtype : 'button',
                             formBind : true, //Disables form submission if the form is not valid
                             iconCls : 'fa fa-sign-in fa-lg',
-                            text : 'Login',
+                            text : translations.login,
                             listeners : {
                                 click : 'onButtonClickSubmit'
                             }

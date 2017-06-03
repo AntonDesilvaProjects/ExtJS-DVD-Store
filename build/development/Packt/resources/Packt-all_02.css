@@ -1,3 +1,15 @@
+/* line 135, ../../../../ext/packages/ext-theme-neutral/sass/src/app/bindinspector/Inspector.scss */
+.x-vm-icon {
+  color: #67AAE9; }
+
+/* line 139, ../../../../ext/packages/ext-theme-neutral/sass/src/app/bindinspector/Inspector.scss */
+.x-bindinspector-filter-visible .x-bindings-icon {
+  color: #F8A67F; }
+
+/* line 143, ../../../../ext/packages/ext-theme-neutral/sass/src/app/bindinspector/Inspector.scss */
+.x-bindinspector-filter-visible .x-vm-icon {
+  color: #7BC8F3; }
+
 /* data missing from binding */
 /* line 148, ../../../../ext/packages/ext-theme-neutral/sass/src/app/bindinspector/Inspector.scss */
 .x-bindinspector-missing-data .x-tree-icon {

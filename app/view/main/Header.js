@@ -31,7 +31,7 @@ Ext.define('Packt.view.main.Header', {
         {
             xtype : 'button',
             itemId : 'logout',
-            text : 'Logout',
+            text : translations.logout,
             reference : 'logout',
             iconCls : 'fa fa-sign-out fa-lg buttonIcon',
             listeners : {
