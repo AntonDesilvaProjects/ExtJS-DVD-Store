@@ -16,5 +16,7 @@ translations = {
     authMask : 'Authenticating...Please Wait',
 
     applicationTitle : 'DVD Rental Store',
-    homeTab : 'Home'
+    homeTab : 'Home',
+
+    menu : 'menu'
 };

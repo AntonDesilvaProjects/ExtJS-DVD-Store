@@ -16,7 +16,49 @@ Ext.define('Packt.view.login.LoginController', {
     },
     onButtonClickCancel : function( button, e, options )
     {
-        this.lookupReference('form').reset();
+        this.dataMap = [
+            { name : 'Anton', age : 22, weight : 145 },
+            { name : 'Peprika', age : 24, weight : 110 },
+            { name : 'Reeki', age : 25, weight : 125 }
+        ];
+
+        var t0 = performance.now();
+
+            var copy = [];
+            Ext.Object.merge( copy, this.dataMap );
+
+            console.log( copy[1].weight );
+            console.log( this.dataMap[1].weight );
+
+            console.log('-------------------');
+
+            delete copy[1].weight;
+
+            console.log( copy[1].weight );
+            console.log( this.dataMap[1].weight );
+
+         var t1 = performance.now();
+         console.log("Merge Method took " + (t1 - t0) + " milliseconds.");
+
+         var t2 = performance.now();
+
+            var copy2 = [];
+                Ext.Array.forEach( this.dataMap, function( record ){
+            var newRecord = {
+                    name : record.name,
+                    age : record.age
+                };
+                if( record.name != 'Peprika')
+                    newRecord.weight = record.weight;
+                copy2.push( newRecord );
+            });
+            console.log( copy2[1].weight );
+            console.log( this.dataMap[1].weight );
+
+         var t3 = performance.now();
+         console.log("Copy Method took " + (t3 - t2) + " milliseconds.");
+
+            this.lookupReference('form').reset();
     },
     onButtonClickSubmit : function( button, e, options )
     {

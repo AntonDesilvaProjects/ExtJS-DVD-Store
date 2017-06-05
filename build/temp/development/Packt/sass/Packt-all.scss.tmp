@@ -897,6 +897,10 @@ $include-extthemeneptune-resizer-splitter: true;
 $include-extthemeneptune-toolbar-paging: true;
 $include-extthemeneptune-toolbar-toolbar: true;
 $include-packt-application: true;
+$include-packt-controller-menu: true;
+$include-packt-model-menu-accordion: true;
+$include-packt-model-menu-treenode: true;
+$include-packt-store-menu: true;
 $include-packt-util-sessionmonitor: true;
 $include-packt-util-util: true;
 $include-packt-view-locale-translation: true;
@@ -910,6 +914,8 @@ $include-packt-view-main-main: true;
 $include-packt-view-main-maincontroller: true;
 $include-packt-view-main-mainmodel: true;
 $include-packt-view-main-panel: true;
+$include-packt-view-menu-accordion: true;
+$include-packt-view-menu-tree: true;
 /* including package ext-theme-base */
 @import '../../../../../ext/packages/ext-theme-base/sass/etc/all';
 /* including package ext-theme-neutral */

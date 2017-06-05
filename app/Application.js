@@ -34,7 +34,9 @@ Ext.define('Packt.Application', {
     views : [
         'Packt.view.login.Login'
     ],
-    
+    controllers : [
+        'Menu'
+    ],
     init : function()
     {
         var me = this;

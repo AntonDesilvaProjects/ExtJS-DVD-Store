@@ -12,6 +12,7 @@ Ext.define('Packt.view.main.Main', {
         'Packt.view.main.Header',
         'Packt.view.main.Footer',
         'Packt.view.main.Panel',
+        'Packt.view.menu.Accordion',
         'Packt.view.main.MainController',
         'Packt.view.main.MainModel'
     ],
@@ -44,7 +45,7 @@ Ext.define('Packt.view.main.Main', {
         },
         {
             region : 'west',
-            xtype : 'container',
+            xtype : 'mainmenu',
             width : 200,
             split : true
         }
