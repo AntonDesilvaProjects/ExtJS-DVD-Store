@@ -28,6 +28,6 @@ Ext.define('Packt.model.menu.Accordion', {
     hasMany : {
         model : 'Packt.model.menu.TreeNode', //The class 
         foreignKey : 'parent_id', //Identifies for the TreeNode
-        name : 'items' //we can get an array of all 'TreeNode's associated with an Accordion instance with this name
+        name : 'items' //we can get a store of all 'TreeNode's associated with an Accordion instance with this name
     }
 });

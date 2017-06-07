@@ -18,5 +18,19 @@ translations = {
     applicationTitle : 'DVD Rental Store',
     homeTab : 'Home',
 
-    menu : 'menu'
+    menu : 'menu',
+
+    menu1 : 'Security',
+    menu11 : 'Groups and Permissions',
+    menu12 : 'Users',
+    staticData: 'Static Data',
+    actors: 'Actors',
+    categories: 'Categories',
+    languages: 'Languages',
+    cities: 'Cities',
+    countries: 'Countries',
+    cms: 'Content Management',
+    films: 'Films',
+    reports: 'Reports',
+    salesfilmcategory: 'Sales by Film Category'
 };

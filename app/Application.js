@@ -28,6 +28,7 @@ Ext.define('Packt.Application', {
     
     name: 'Packt',
     enableQuickTips : true,
+    //glyphFontFamily: 'FontAwesome',
     stores: [
         // TODO: add global / shared stores here
     ],

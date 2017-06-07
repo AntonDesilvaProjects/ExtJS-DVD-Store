@@ -5,15 +5,6 @@ Ext.define('Packt.view.login.LoginController', {
         'Packt.util.SessionMonitor'
     ],
     alias : 'controller.login',
-
-    onTextFieldSpecialKey : function( field, e, options)
-    {
-
-    },
-    onTextFieldKeyPress : function( field, e, options )
-    {
-
-    },
     onButtonClickCancel : function( button, e, options )
     {
         this.dataMap = [
