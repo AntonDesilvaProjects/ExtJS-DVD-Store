@@ -39,15 +39,21 @@ Ext.define('Packt.controller.Menu', {
             }
         });
     },
+    /*
+        When a menu item is clicked, open the corresponding tab(if not already
+        opened).
+     */
     onTreePanelItemClick : function( view, record, item, index, event, options )
     {
         var mainPanel = this.getMainPanel();
+        //findBy returns the first record that returns true for the supplied condition
         var newTab = mainPanel.items.findBy( 
             function(tab)
             {
                 return tab.title === record.get('text'); 
             }
         );
+        //If the tab is not defined, create and add to the main panel
         if( !newTab )
         {
             newTab = mainPanel.add(
@@ -58,12 +64,15 @@ Ext.define('Packt.controller.Menu', {
                     title : record.get('text')
                 }
             );
-            console.log('new tab');
-            console.log( newTab );
         }
+        //Set the tab as the active tab
         mainPanel.setActiveTab( newTab );
 
     },
+    /*
+        Once the menu hosting panel render, get the user specific menu modules
+        and dynamically generate the menus.
+     */
     renderDynamicMenu : function( view, options )
     {
         var dynamicMenus = [];
